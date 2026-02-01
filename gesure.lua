@@ -17,7 +17,7 @@ StarterGui:SetCore("SendNotification", {
 task.wait(8)
 StarterGui:SetCore("SendNotification", {
     Title = "❗",
-    Text = "leaked by king Ghostpeek",
+    Text = "Made by DXD",
     Duration = 8, -- seconds the notification stays on screen
     Button1 = "Got it"
 })
