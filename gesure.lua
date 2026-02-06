@@ -378,7 +378,7 @@ local Config = {
         ["MoneyAmount"] = false;
 
         ["Fly"] = {
-            ["Enabled"] = true;
+            ["Enabled"] = false;
             ["Type"] = "CFrame";
             ["Speed"] = 50;
         };
