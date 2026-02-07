@@ -3091,7 +3091,7 @@ do
                         task.wait()
                         if Bike == nil then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Nyxware",
                                 info = `Your bike was not found!`,
                                 lifetime = 5
                             })
@@ -3114,7 +3114,7 @@ do
                         task.wait()
                         if Bike == nil then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Nyxware",
                                 info = `Your bike was not found!`,
                                 lifetime = 5
                             })
@@ -9872,7 +9872,7 @@ if not Mobile then
         
                 if Server.id == game.JobId then
                     library.notifications:create_notification({
-                        name = "Gesure",
+                        name = "Nyxware",
                         info = `You are currently in the smallest server!`,
                         lifetime = 10
                     })
@@ -14012,7 +14012,7 @@ if Game_Name == "The Bronx" then
                         pcall(Teleport, OldCFrame)
 
                         library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Nyxware",
                             info = `Successfully safed {state}!`,
                             lifetime = 5
                         })
@@ -14054,7 +14054,7 @@ if Game_Name == "The Bronx" then
                         pcall(Teleport, OldCFrame)
 
                         library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Nyxware",
                             info = `Successfully took {state} from safe!`,
                             lifetime = 5
                         })
@@ -14422,7 +14422,7 @@ if Game_Name == "The Bronx" then
                 ManualFarmSections:button({name = "Clean All Filthy Money", callback = LPH_NO_VIRTUALIZE(function()
                     if LocalPlayer.stored.FilthyStack.Value == 0 then 
                         return library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Nyxware",
                             info = `You have no money`,
                             lifetime = 7.5
                         })
@@ -14435,7 +14435,7 @@ if Game_Name == "The Bronx" then
                     
                     if not Cleaner then
                         return library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Nyxware",
                             info = `Could not find a valid cleaner!`,
                             lifetime = 7.5
                         })
@@ -14665,7 +14665,7 @@ DupingSection:toggle({
                     task.spawn(function()
                         if Cooldown then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Nyxware",
                                 info = `Please wait!`,
                                 lifetime = 5
                             })
@@ -14679,7 +14679,7 @@ DupingSection:toggle({
 
                         if not Tool then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Nyxware",
                                 info = `Could not find a tool! you must hold one.`,
                                 lifetime = 10
                             })
@@ -14817,7 +14817,7 @@ DupingSection:toggle({
                     if Check then
                         DeleteSecretUI()
                         library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Nyxware",
                             info = `Could not find items! Please check you have more than 5000$.`,
                             lifetime = 10
                         })
