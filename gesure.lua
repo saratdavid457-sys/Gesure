@@ -6246,7 +6246,7 @@ if not Mobile then
 -- Library init
     local themes = {
         preset = {
-            accent = rgb(0, 220, 255),
+            accent = rgb(200, 40, 40),
         }, 
 
         utility = {
