@@ -260,7 +260,7 @@ local FireServer, InvokeServer, UnreliableFireServer = Instance.new("RemoteEvent
 
 if isfunctionhooked then
     if isfunctionhooked(FireServer) or isfunctionhooked(UnreliableFireServer) or isfunctionhooked(InvokeServer) and LPH_OBFUSCATED then
-        return Services.LocalPlayer:Kick("Gesure | Security : You are running another script, please disable it and execute again")
+        return Services.LocalPlayer:Kick("Cryptic | Security : You are running another script, please disable it and execute again")
     end
 end
 
@@ -14930,7 +14930,7 @@ DupingSection:toggle({
                         local Prompt = Workspace:FindFirstChild("GUNS")[self]:FindFirstChildWhichIsA("ProximityPrompt",true);
                         if (Workspace:FindFirstChild("GUNS")[self]:FindFirstChild("GamepassID", true) and not MarketplaceService:UserOwnsGamePassAsync(LocalPlayer.UserId, Workspace:FindFirstChild("GUNS")[self]:FindFirstChild("GamepassID",true).Value)) then 
                             return library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `You do not own this gamepass!`,
                                 lifetime = 5
                             })
@@ -14941,7 +14941,7 @@ DupingSection:toggle({
                         local Part = Prompt.Parent:IsA("Part") and Prompt.Parent.CFrame or Prompt.Parent:IsA("MeshPart") and Prompt.Parent.CFrame or Prompt.Parent:IsA("UnionOperation") and Prompt.Parent.CFrame;
                         if LocalPlayer.stored.Money.Value < Workspace:FindFirstChild("GUNS")[self]:FindFirstChild("Price",true).Value then
                             return library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `You are ${Workspace:FindFirstChild("GUNS")[self]:FindFirstChild("Price",true).Value - LocalPlayer.stored.Money.Value} short.`,
                                 lifetime = 5
                             })
@@ -14975,7 +14975,7 @@ DupingSection:toggle({
                         task.spawn(Teleport, OldCFrame)
 
                         library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Cryptic",
                             info = `Successfully purchased {self}!`,
                             lifetime = 5
                         })
@@ -15003,7 +15003,7 @@ DupingSection:toggle({
                         Teleport(Config.TheBronx.TeleportationList[state])
 
                         library.notifications:create_notification({
-                            name = "Gesure",
+                            name = "Cryptic",
                             info = `Successfully teleported to {state}!`,
                             lifetime = 5
                         })
@@ -15284,7 +15284,7 @@ if Game_Name == "South Bronx" then
 
                             if Teleport_Status == "Failed" then
                                 library.notifications:create_notification({
-                                    name = "Gesure",
+                                    name = "Cryptic",
                                     info = `Failed to purchase {self}!`,
                                     lifetime = 7.5
                                 })
@@ -15311,7 +15311,7 @@ if Game_Name == "South Bronx" then
 
                         if not LocalPlayer.Backpack:FindFirstChild(self) and not LocalPlayer.Character:FindFirstChild(self) then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Failed to purchase {self}!`,
                                 lifetime = 7.5
                             })
@@ -15322,13 +15322,13 @@ if Game_Name == "South Bronx" then
                         if not DidntBuy then
                             if suc then
                                 library.notifications:create_notification({
-                                    name = "Gesure",
+                                    name = "Cryptic",
                                     info = `Successfully purchased {self}!`,
                                     lifetime = 5
                                 })
                             else
                                 library.notifications:create_notification({
-                                    name = "Gesure",
+                                    name = "Cryptic",
                                     info = `Failed to purchase item {self} . error : {err}`,
                                     lifetime = 15
                                 })
@@ -15361,7 +15361,7 @@ if Game_Name == "South Bronx" then
 
                         if TP_Debounce then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Please wait!`,
                                 lifetime = 5
                             })
@@ -15386,7 +15386,7 @@ if Game_Name == "South Bronx" then
                                     Teleport(_Hobo)
                                 else
                                     library.notifications:create_notification({
-                                        name = "Gesure",
+                                        name = "Cryptic",
                                         info = `Failed to locate dirty hobo crackhead!`,
                                         lifetime = 5
                                     })
@@ -15435,7 +15435,7 @@ if Game_Name == "South Bronx" then
 
                         if (LocalPlayer.Character.HumanoidRootPart.Position - _Position.Position).Magnitude > 20 then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Failed teleported to {state}!`,
                                 lifetime = 7.5
                             })
@@ -15445,13 +15445,13 @@ if Game_Name == "South Bronx" then
 
                         if suc then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Successfully teleported to {state}!`,
                                 lifetime = 5
                             })
                         else
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Teleportation to {state}. error : {err}`,
                                 lifetime = 15
                             })
@@ -15511,7 +15511,7 @@ if Game_Name == "South Bronx" then
 
                         if (LocalPlayer.Character.HumanoidRootPart.Position - Players[Config.South_Bronx.PlayerUtilities.SelectedPlayer].Character.HumanoidRootPart.Position).Magnitude > 20 then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Failed to teleport to {Config.South_Bronx.PlayerUtilities.SelectedPlayer}!`,
                                 lifetime = 7.5
                             })
@@ -15521,13 +15521,13 @@ if Game_Name == "South Bronx" then
 
                         if Success then
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Successfully teleported to {Config.South_Bronx.PlayerUtilities.SelectedPlayer}!`,
                                 lifetime = 7.5
                             })
                         else
                             library.notifications:create_notification({
-                                name = "Gesure",
+                                name = "Cryptic",
                                 info = `Failed to teleport to {Config.South_Bronx.PlayerUtilities.SelectedPlayer}. Error : {Error}`,
                                 lifetime = 10
                             })
