@@ -78,7 +78,7 @@ if LPH_OBFUSCATED == nil then
     end
     LRM_IsUserPremium = false
     LRM_LinkedDiscordID = "0"
-    LRM_ScriptName = "Gesure"
+    LRM_ScriptName = "Nyxware"
     LRM_TotalExecutions = 0
     LRM_SecondsLeft = math.huge
     LRM_UserNote = "Developer";
